@@ -24,11 +24,8 @@ git push --set-upstream origin development
 if the pull request has conflict, 
 
 
-<<<<<<< HEAD
-Step 1: Checkout the source branch (feature branch) and merge in the changes from the target branch (from dev changes). Resolve conflicts.
-=======
 Step 1: Checkout the source branch (feature branch) and merge in the changes from the target branch (from dev changes). Resolve conflicts (this can be done easier from IDE IMO).
->>>>>>> add readme
+
 git checkout feature/stateless-component
 git pull origin development
 
@@ -52,6 +49,13 @@ git merge develop
 git branch -d feature_branch
 
 
+rebase
+
+git checkout feature/branch1
+...making changes
+git rebase development
+git checkout development
+git merge 1adb0e3
 
 reset
 
