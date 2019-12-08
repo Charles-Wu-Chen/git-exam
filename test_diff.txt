@@ -1,1 +1,3 @@
-# line1
+# line2
+# line2
+#seems git diff and git  diff HEAD are the same?  no. they are not
